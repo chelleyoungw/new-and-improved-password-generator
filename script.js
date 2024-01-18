@@ -11,17 +11,27 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var length = prompt("Choose your password length. Input a number between 8 and 128.");
-  var smallLength = (length >= 8);
-  var largeLength = (length <= 128);
-  
+  var promptLengthComment = "Choose your password length. Input a number between 8 and 128.";
+  var length = null;
 
-  if (smallLength && largeLength) {
-    console.log('greater than 8');
-  }else {
-    console.log('wrong');
+  do {
+    length = prompt(promptLengthComment);
   }
-  return "hello world";
+  while (!(length >= 8 && length <= 128)&&(length != null));
+  
+  var promptLowercaseComment = "Do you want lowercase character types included in the password? yes or no?";
+  var lowercaseYes = true;
+  var lowercaseNo = false;
+  var lowercaseResponse;
+
+  do {
+    lowercaseResponse = prompt(promptLowercaseComment);
+  }
+  while (!(lowercaseResponse == "yes" || lowercaseResponse == "no")&&(lowercaseResponse != null));
+
+
+
+  return (length + lowercaseResponse);
 } 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
