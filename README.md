@@ -10,9 +10,9 @@ To navigate on the web application, click on the red generate button. It will po
 
 ## Application Image and Link
 
-The following image shows the web application's appearance. You can also go to the web application by clicking the following link. https://chelleyoungw.github.io/the--power-of-a-personal-professional-portfolio/
+The following image shows the web application's appearance. You can also go to the web application by clicking the following link. https://chelleyoungw.github.io/new-and-improved-password-generator/
 
-(./assets/images/my-personal-portfolio.png) 
+![My Password Generator webpage includes a header, a box where the password will show, and a red Generate Password button.](./assets/password-generator-screenshot.png) 
 ## Credits
 
 Chelle Wood (student)
